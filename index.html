@@ -11,6 +11,10 @@
 
 
   <style>
+.required {
+    color: #ff4b4b;
+    margin-left: 2px;
+}
 .popup-close {
     font-family: 'Be Vietnam Pro', sans-serif !important;
 }
@@ -548,11 +552,11 @@ body{
       <div id="measureBlock" style="margin-top:10px">
         <div class="row">
           <div>
-            <label for="len">Dài áo (cm)</label>
+            <label for="len">Dài áo (cm) <span class="required">*</span></label>
             <input id="len" inputmode="decimal" placeholder="VD: 70">
           </div>
           <div>
-            <label for="chest">Ngang ngực áo (cm)</label>
+            <label for="chest">Ngang ngực áo (cm) <span class="required">*</span></label>
             <input id="chest" inputmode="decimal" placeholder="VD: 52">
           </div>
         </div>
@@ -568,11 +572,11 @@ body{
       <div id="bodyBlock" class="hidden" style="margin-top:10px">
 <div class="row">
   <div>
-    <label for="height">Chiều cao (cm)</label>
+    <label for="height">Chiều cao (cm) <span class="required">*</span></label>
     <input id="height" inputmode="decimal" placeholder="VD: 172">
   </div>
   <div>
-    <label for="weight">Cân nặng (kg)</label>
+    <label for="weight">Cân nặng (kg) <span class="required">*</span></label>
     <input id="weight" inputmode="decimal" placeholder="VD: 68">
   </div>
 </div>
